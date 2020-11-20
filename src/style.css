@@ -1,0 +1,85 @@
+html, body, #root {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #3c3e3e 0%, #1d1d1d 30%);
+}
+
+.todo-app {
+    font-family: sans-serif;
+}
+
+/** add todo **/
+.add-todo {
+    margin-left: 0.5rem;
+}
+
+/** todo list **/
+.todo-list {
+    margin-top: 1rem;
+    text-align: left;
+    list-style: none;
+    color: antiquewhite;
+}
+
+/** todo item **/
+.todo-item {
+    font-family: monospace;
+    cursor: pointer;
+    line-height: 1.5;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    background-color: #12755466;
+    margin-bottom: 10px;
+    min-height: 100px;
+    flex-wrap: wrap;
+    overflow-wrap: anywhere;
+    flex-flow: column;
+    padding: 5px 30px 20px 20px;
+}
+.todo-item--completed {
+    text-decoration: line-through;
+    color: darkcyan;
+}
+
+.todoInternalContainer {
+    justify-content: space-between;
+}
+
+.todoLabel {
+    display: flex;
+    justify-content: inherit;
+    width: 100%;
+    line-height: 26px;
+    flex-wrap: nowrap;
+    overflow-wrap: normal;
+}
+
+.todo-item__title {
+    font-weight: bolder;
+    overflow-wrap: anywhere;
+}
+
+.todo-item__text {
+    overflow-wrap: anywhere;
+    margin-left: 20px;
+}
+
+/** visibility filters **/
+.filter {
+    padding: 0.3rem 0;
+    margin: 0 0.3rem;
+    cursor: pointer;
+    color: aquamarine;
+}
+.filter--active {
+    border-bottom: 1px solid aquamarine;
+}
+
+.visibility-filters {
+    display: flex;
+    justify-content: center;
+}

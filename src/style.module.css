@@ -1,0 +1,210 @@
+.menuContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #3c3e3e 0%, #1d1d1d 30%);
+    height: fit-content;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 0px;
+}
+
+.menuItem {
+    background: #353535;
+    height: 50px;
+    min-width: 150px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #eee;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Cookie', cursive;
+    position: relative;
+    transition: 1s;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.menuItem:hover {
+    background: transparent;
+}
+
+.circle {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    transition: 500ms;
+}
+
+.menuItem:hover .circle {
+    height: 50px;
+    width: 150px;
+    left: 0;
+    border-radius: 0;
+    border-bottom: 2px solid #eee;
+}
+
+.noSelect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.addTodoContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    min-height: 300px;
+    align-items: center;
+    flex-flow: column;
+}
+
+.addTodoTextarea {
+    margin-right: 20px;
+    min-width: 350px;
+}
+
+.addTodoTitleInput {
+    min-width: 350px;
+}
+
+.addTodoButton {
+    font-weight: 800;
+    min-width: 100px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 15px;
+    display: inline-block;
+    padding: 10px 16px;
+    margin: 0 3px 0 0;
+    cursor: pointer;
+    font-family: "Muli", sans-serif;
+    transition-property: all;
+    transition-duration: 1s;
+    outline: none;
+}
+
+.neutralAddTodoButton {
+    composes: addTodoButton;
+    border: 3px solid #cdbe5c;
+    color: #cdb55c;
+    background-color: rgb(117, 94, 21);
+}
+
+.positiveAddTodoButton {
+    composes: addTodoButton;
+    border: 3px solid #8eff33;
+    color: #8eff33;
+    background-color: rgba(46, 102, 0, 0.81);
+}
+
+.disabledAddTodoButton {
+    composes: addTodoButton;
+    border: 3px solid #ae1414;
+    color: #ae1414;
+    background-color: rgba(91, 7, 7, 0.81);
+    cursor: not-allowed;
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    25% {
+        transform: rotateX(30deg);
+    }
+    50% {
+        transform: rotateX(-30deg);
+    }
+    75% {
+        transform: rotateX(30deg);
+    }
+}
+
+.addTodoButton::-moz-focus-inner {
+    border: 0;
+}
+
+.addTodoLabels {
+    color: #eee;
+    display: flex;
+    justify-content: inherit;
+    width: 600px;
+    line-height: 26px;
+}
+
+.datePickerContainer {
+    background-color: #eee;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menuContainerRight {
+    margin-left: auto;
+    display: flex;
+}
+
+.menuItemRightGithub {
+    margin-left: 25px;
+    min-width: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-blend-mode: normal;
+    background-clip: border-box;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.githubLogoImg {
+    width: 50px;
+    height: 50px;
+}
+
+.menuItemRight {
+    composes: menuItem;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #191919;
+}
+
+.loggedInUserContainer {
+    font-size: 11px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    justify-content: center;
+}
+
+.loggedInUserNameEmail {
+    margin-right: 20px;
+    font-size: 15px;
+    color: aquamarine;
+}
+
+.userPhoto {
+    width: 50px;
+}
+
+.addedTodoNoti {
+    color: aquamarine;
+    font-size: 16px;
+}
