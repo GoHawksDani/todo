@@ -1,7 +1,7 @@
 {
   "name": "todo-app",
   "version": "0.1.0",
-  "homepage": "http://gohawksdani.github.io",
+  "homepage": "http://gohawksdani.github.io/todo",
   "private": true,
   "dependencies": {
     "@date-io/date-fns": "^1.3.13",
